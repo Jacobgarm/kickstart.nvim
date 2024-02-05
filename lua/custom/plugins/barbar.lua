@@ -7,7 +7,8 @@ return {
 	init = function() vim.g.barbar_auto_setup = false end,
 	opts = {
 		-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-		-- animation = true,
+		animation = true,
+		auto_hide = 1,
 		-- insert_at_start = true,
 		-- …etc.
 	},

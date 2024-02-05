@@ -88,7 +88,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -419,6 +419,7 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 
 -- Custom keymaps
 vim.keymap.set('n', '<leader>e', ":Neotree<cr>", { desc = 'Open file tree', silent = true })
+vim.keymap.set('n', '<C-p>', '<Cmd>BufferPick<CR>')
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
